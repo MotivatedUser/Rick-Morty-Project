@@ -1,38 +1,110 @@
-.App {
+body {
+  color: white;
+  background-color: black;
+}
+
+.center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-body {
+  background-image: url(https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvbG9yJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+  
+}
+/* Logo effect that scales and rotates */
+.hover-rotate {
+  overflow: hidden;
+  margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 240px;
+  max-width: 320px;
+  width: 100%;
+  background-color: rgb(21, 255, 91);
+  color: black;
+}
+.hover-rotate img {
+  transition: all 2s;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.hover-rotate:hover img {
+  transform: scale(2) rotate(35deg);
+}
+.form {
+  text-align: center;
+}
+.form-control {
+  font-size: 2rem;
+  margin-bottom: 2.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.card {
+  cursor: pointer;
+  background-color: transparent;
+  height: 300px;
+  perspective: 1000px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.card h1 {
+  font-size: 25px;
+  border-bottom: 1px #fff solid;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+.card-front, 
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.card-back {
+  background-color: #333;
   color: white;
+  padding: 20px;
+  transform: rotateY(180deg);
+}
+.card li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .cards {
+    grid-template-columns: repeat(1fr);
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  background-color: rgb(164, 248, 248);
+  color: blue;
+  text-align: center;
+  margin: 10px 10px;
+  padding: 10px 10px;
 }
