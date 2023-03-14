@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Rick-Morty-Project/static/css/main.0548d41e.css",
+    "main.js": "/Rick-Morty-Project/static/js/main.eaaa97c7.js",
+    "static/media/logo.png": "/Rick-Morty-Project/static/media/logo.4cc44eebff8567906c2d.png",
+    "index.html": "/Rick-Morty-Project/index.html",
+    "main.0548d41e.css.map": "/Rick-Morty-Project/static/css/main.0548d41e.css.map",
+    "main.eaaa97c7.js.map": "/Rick-Morty-Project/static/js/main.eaaa97c7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0548d41e.css",
+    "static/js/main.eaaa97c7.js"
+  ]
+}
