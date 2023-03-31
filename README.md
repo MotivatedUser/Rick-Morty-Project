@@ -1,3 +1,33 @@
+Rick and Morty App
+This is a web application that displays information about characters from the Rick and Morty universe. The application uses the Rick and Morty API to fetch character data and display it on the site. The app was built using React, and includes features like pagination, search functionality, and filtering by character status and gender.
+
+Technologies Used
+The following technologies were used to build this app:
+
+React
+React DOM
+Axios
+React Icons
+React Scripts
+
+Features
+The Rick and Morty App includes the following features:
+
+Displaying character data from the Rick and Morty API
+Pagination to browse through multiple pages of characters
+Search functionality to search for characters by name
+Filtering by character status and gender
+
+Learning Outcomes
+This project was built to explore and learn about integrating data from a third-party API into a React app. Through this project, I learned about using axios to fetch data, useState and useEffect hooks to manage state and side effects, and async and await to handle asynchronous API requests. I also gained experience with React components, props, and event handling.
+
+Deployment
+This app was deployed to GitHub Pages using the gh-pages package. 
+
+Credits
+The character data used in this app was provided by the Rick and Morty API.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,4 +98,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 # Rick-Morty-Project

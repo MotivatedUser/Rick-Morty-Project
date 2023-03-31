@@ -4,22 +4,26 @@ import logo from "../../img/logo.png";
 
 const Header = () => {
   return (
-    <section className='header-body'>
+    <section className="header-body">
       <figure class="hover-rotate">
         <img src={logo} alt="Rick and Morty logo" />
         <p>
-          Thanks for visiting. This site uses the 
+          Thanks for visiting. This site uses the
           <a
             role="button"
             className="btn btn-link"
             href="https://rickandmortyapi.com/"
           >
-             https://rickandmortyapi.com/ <HiFingerPrint />
+            https://rickandmortyapi.com/ <HiFingerPrint />
           </a>
           Click the link to check it out ... but be quick Rick and Morty protect
           it.
         </p>
       </figure>
+      <p>
+        The link just in case.
+        <a href="https://rickandmortyapi.com/">https://rickandmortyapi.com/</a>
+      </p>
     </section>
   );
 };
